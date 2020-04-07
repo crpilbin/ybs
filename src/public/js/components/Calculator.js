@@ -4,7 +4,7 @@ class Calculator extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      deposit: 10,
+      deposit: 10000,
       value: 200000,
       interest: 10,
       term: 30,
@@ -26,7 +26,7 @@ class Calculator extends React.Component {
       this.state.interest,
       this.state.term
     );
-    this.setState({ result: calculatedResult });
+    this.setState({ result: calculatedResult.toFixed(2) });
   }
 
   calculate(deposit, value, repayment, term) {
@@ -72,7 +72,7 @@ class Calculator extends React.Component {
             name="term"
             type="text"
           />
-          <input type="submit" />
+          <input type="submit" value="Calculate" />
         </form>
       </>
     );
