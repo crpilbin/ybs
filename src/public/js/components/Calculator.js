@@ -49,28 +49,28 @@ class Calculator extends React.Component {
             value={this.state.deposit}
             onChange={this.handleChange}
             name="deposit"
-            type="text"
+            type="number"
           />
           <label htmlFor="value">Property Value</label>
           <input
             value={this.state.value}
             onChange={this.handleChange}
             name="value"
-            type="text"
+            type="number"
           />
           <label htmlFor="interest">Interest Repayment</label>
           <input
             value={this.state.interest}
             onChange={this.handleChange}
             name="interest"
-            type="text"
+            type="number"
           />
           <label htmlFor="term">Mortgage Term</label>
           <input
             value={this.state.term}
             onChange={this.handleChange}
             name="term"
-            type="text"
+            type="number"
           />
           <input type="submit" value="Calculate" />
         </form>
